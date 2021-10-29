@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="title">Guess the Number</h1>
+        <p class="guide">In this game the computer selects a number between 1 and 100, if you guess the number correctly
+            in ten turns or less, you win.</p>
+        <div class="input">
+            <input type="number" placeholder="Enter guess" class="input-guess">
+            <button class="guess">Guess</button>
+        </div>
+        <div class="guesses">
+            <p>Previous guesses : 1, 2, 3</p>
+        </div>
+        <div class="game-state">
+        </div>
+        <div class="lose">
+        </div>
+        <div class="feedback">
+            <p>Your guess was too high!</p>
+        </div>
+        <button class="play-again">Play again</button>
+    </div>
+</body>
+
+</html>

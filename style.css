@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(223, 224, 241);
+}
+
+.content {
+    width: 500px;
+    background: rgb(214, 200, 196);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(180, 129, 129);
+}
+
+/* header */
+
+.title {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(218, 218, 41);
+    color: rgb(14, 22, 59);
+}
+
+/* instructions */
+
+.guide {
+    padding: 5px;
+    margin: 10px;
+}
+
+/* input */
+
+.input {
+    margin: 10px;
+    text-align: center;
+}
+
+.input input {
+    padding: 5px;
+    width: 100px;
+}
+
+.input button {
+    padding: 5px 10px;
+}
+
+/* code below from https://css-tricks.com/snippets/css/turn-off-number-input-spinners/ */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* info */
+
+.guesses, .game-state, .feedback {
+    margin: 10px;
+}
+
+.guesses, .game-state, .feedback {
+    display: none;
+}
+
+.wrong-guess, .right-guess {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrong-guess {
+    color:rgb(245, 236, 236);
+    background:rgb(185, 8, 8);
+    box-shadow: 0 3px 5px rgb(67, 34, 82);
+}
+
+.right-guess {    
+    color: rgb(151, 103, 153);
+    background: rgb(46, 231, 9);
+    box-shadow: 0 5px 10px rgb(144, 110, 160);
+}
+
+.play-again {
+    display: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.lose {
+    display: none;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(245, 236, 236);
+    background:rgb(214, 14, 14);
+    box-shadow: 0 3px 10px rgb(67, 34, 82);
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 75%;
+    }
+
+    .wrong-guess, .right-guess {
+        width: 50%;
+    }
+}
